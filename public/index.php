@@ -1,4 +1,5 @@
 <?php
+    header('Content-Type: text/html; charset=utf-8');
     $quote = array(
         '„Az egybubis az egy kicsit drágább, mert hát abból ki kellett vennem a többi bubit.”' => 1,
         '„Miért Üvegtigris? Mér, mi legyen? Fapuma?”' => 2,
