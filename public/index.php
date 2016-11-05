@@ -87,12 +87,38 @@
             }
 
             .title {
-                color: #B0BEC5;
+                color: #b0bec5;
                 font-size: 60px;
+            }
+
+            .bar {
+                position: fixed;
+                top: 0; left: 0; z-index: 2;
+                width: 100%;
+                height: 5px;
+            }
+
+            .bar .indicator {
+                width: 0;
+                height: 5px;
+                content: '';
+                background-color: #3498db;
+                animation: loading 5s linear infinite;
+                -webkit-box-shadow: 0px 0px 8px 0px rgba(52,152,219,0.75);
+                   -moz-box-shadow: 0px 0px 8px 0px rgba(52,152,219,0.75);
+                        box-shadow: 0px 0px 8px 0px rgba(52,152,219,0.75);
+            }
+
+            @keyframes loading {
+                from { left: 50%; width: 0; z-index: 100; }
+                to { left: 0; width: 100%; }
             }
         </style>
     </head>
     <body>
+        <div class="bar">
+            <div class="indicator"></div>
+        </div>
         <div class="container">
             <div class="content">
                 <div class="title">
@@ -100,5 +126,9 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            setTimeout(function(){ window.location.reload(1); }, 5000);
+        </script>
     </body>
 </html>
