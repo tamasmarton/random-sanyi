@@ -104,9 +104,6 @@
                 content: '';
                 background-color: #3498db;
                 animation: loading 5s linear infinite;
-                -webkit-box-shadow: 0px 0px 8px 0px rgba(52,152,219,0.75);
-                   -moz-box-shadow: 0px 0px 8px 0px rgba(52,152,219,0.75);
-                        box-shadow: 0px 0px 8px 0px rgba(52,152,219,0.75);
             }
 
             @keyframes loading {
